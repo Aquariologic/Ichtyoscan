@@ -22,12 +22,12 @@ function showDescription(containerId, id) {
   const html = `
     <div class='maladie'>
       <h3>${formatText(data["Nom maladie"])}</h3>
-      <div class='section'><strong>Origine(s)&nbsp;:<br></strong>${formatText(data["Origine"])}<br></div>
-      ${data["Diagnostic différentiel"] ? `<div class='section'><strong>Diagnostic différentiel&nbsp;:<br></strong>${formatText(data["Diagnostic différentiel"])}<br></div>` : ""}
-      <div class='section'><strong>Causes possibles&nbsp;:<br></strong>${formatText(data["Causes"])}<br></div>
-      <div class='section'><strong>Traitement envisageable&nbsp;:<br></strong>${formatText(data["Traitement"])}<br></div>
-      <div class='section'><strong>Quand consulter son véto&nbsp;?<br></strong>${formatText(data["Quand consulter"])}<br></div>
-      <div class='section'><strong>Prévention&nbsp;:<br></strong>${formatText(data["Prévention"])}<br></div>
+      <div class='section'><div style="text-align: center; font-size: 1.8rem;"><strong>Origine(s)&nbsp;:<br></strong></div>${formatText(data["Origine"])}<br></div>
+      ${data["Diagnostic différentiel"] ? <div style="text-align: center; font-size: 1.8rem;"><strong>Diagnostic différentiel&nbsp;:<br></strong></div>${formatText(data["Diagnostic différentiel"])}<br></div>` : ""}
+      <div class='section'><div style="text-align: center; font-size: 1.8rem;"><strong>Causes possibles&nbsp;:<br></strong></div>${formatText(data["Causes"])}<br></div>
+      <div class='section'><div style="text-align: center; font-size: 1.8rem;"><strong>Traitement(s) envisageable(s)&nbsp;:<br></strong></div>${formatText(data["Traitement"])}<br></div>
+      <div class='section'><div style="text-align: center; font-size: 1.8rem;"><strong>Quand consulter son véto&nbsp;?<br></strong></div>${formatText(data["Quand consulter"])}<br></div>
+      <div class='section'><div style="text-align: center; font-size: 1.8rem;"><strong>Mesures de prévention&nbsp;:<br></strong></div>${formatText(data["Prévention"])}<br></div>
     </div>
   `;
 
