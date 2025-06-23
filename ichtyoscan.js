@@ -19,56 +19,39 @@ function showDescription(containerId, id) {
   const data = maladies[id];
   if (!data) return;
 
-  const html = `
-  <div class='maladie'>
-    <h3>${formatText(data["Nom maladie"])}</h3>
+  const sections = [
+    { title: "Origine(s)", key: "Origine" },
+    { title: "Diagnostic différentiel", key: "Diagnostic différentiel" },
+    { title: "Causes possibles", key: "Causes" },
+    { title: "Traitement(s) envisageable(s)", key: "Traitement" },
+    { title: "Quand consulter son véto ?", key: "Quand consulter" },
+    { title: "Mesures de prévention", key: "Prévention" }
+  ];
 
-    <div class='section'>
-      <div style="text-align: center; font-size: 1.8rem;">
-        <strong>Origine(s)&nbsp;:<br></strong>
-      </div>
-      ${formatText(data["Origine"])}<br>
-    </div>
+  let html = `<div class='maladie'>
+    <h3>${formatText(data["Nom maladie"])}</h3>`;
 
-    ${data["Diagnostic différentiel"] ? `
-      <div class='section'>
-        <div style="text-align: center; font-size: 1.8rem;">
-          <strong>Diagnostic différentiel&nbsp;:<br></strong>
+  sections.forEach((section, index) => {
+    const content = formatText(data[section.key]);
+    if (content) {
+      html += `
+      <div class="accordion-section">
+        <div class="accordion-header" onclick="this.classList.toggle('active')">
+          ${section.title}
         </div>
-        ${formatText(data["Diagnostic différentiel"])}<br>
-      </div>
-    ` : ""}
+        <div class="accordion-content">
+          ${content}
+        </div>
+      </div>`;
+    }
+  });
 
-    <div class='section'>
-      <div style="text-align: center; font-size: 1.8rem;">
-        <strong>Causes possibles&nbsp;:<br></strong>
-      </div>
-      ${formatText(data["Causes"])}<br>
-    </div>
+  html += `</div>`;
 
-    <div class='section'>
-      <div style="text-align: center; font-size: 1.8rem;">
-        <strong>Traitement(s) envisageable(s)&nbsp;:<br></strong>
-      </div>
-      ${formatText(data["Traitement"])}<br>
-    </div>
-
-    <div class='section'>
-      <div style="text-align: center; font-size: 1.8rem;">
-        <strong>Quand consulter son véto&nbsp;?<br></strong>
-      </div>
-      ${formatText(data["Quand consulter"])}<br>
-    </div>
-
-    <div class='section'>
-      <div style="text-align: center; font-size: 1.8rem;">
-        <strong>Mesures de prévention&nbsp;:<br></strong>
-      </div>
-      ${formatText(data["Prévention"])}<br>
-    </div>
-  </div>
-`;
-
+  const container = document.getElementById(containerId);
+  container.innerHTML = html;
+  container.style.display = 'block';
+}
 
   const container = document.getElementById(containerId);
   container.innerHTML = html;
