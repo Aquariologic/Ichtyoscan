@@ -162,8 +162,14 @@ function remplacerJourParDate(texte) {
 
   // Plan d'action seul
   document.getElementById("plan-action").innerHTML = `
-    <h3> Plan d'action personnalisé :</h3>
-    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">${recap}</div>
+     <table>
+    <tr style="margin-top: 30px; font-size: 1.4rem;">
+    <th> Plan d'action personnalisé :</th>
+    </tr>
+    <tr style="margin-top: 30px; font-size: 1.2rem;">
+    <td><div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">${recap}</div></td>
+    </tr>
+    </table>
   `;
 
 }
