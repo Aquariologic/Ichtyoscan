@@ -20,7 +20,7 @@ function showDescription(containerId, id) {
   if (!data) return;
 
   const sections = [
-    { title: "Origine(s)", key: "Origine" },
+    { title: "Origine(s) possible(s)", key: "Origine" },
     { title: "Diagnostic différentiel", key: "Diagnostic différentiel" },
     { title: "Causes possibles", key: "Causes" },
     { title: "Traitement(s) envisageable(s)", key: "Traitement" },
