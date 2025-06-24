@@ -56,7 +56,8 @@ function chargerOriginesFiltrees(typeMaladie) {
         { val: "🦠int", txt: "🦠 Parasite interne (protozoaire)" },
         { val: "🐍ext", txt: "🐍 Parasite externe (vers)" },
         { val: "🦟ext", txt: "🦟 Parasite externe (poux-crustacés-isopodes)" },
-        { val: "🦠ext", txt: "🦠 Parasite externe (protozoaire)" }
+        { val: "🦠ext", txt: "🦠 Parasite externe (protozoaire)" },
+        { val: "♜", txt: "♜traitements préventifs à l'arrivée" }
       ];
 
   const clean = typeMaladie.replace(/\s/g, "");
