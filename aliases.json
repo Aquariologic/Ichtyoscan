@@ -1,9 +1,15 @@
 {
+"loche clown": "Chromobotia macracanthus",
+"clown": "Chromobotia macracanthus",
+"botia": "Chromobotia macracanthus",
+"mangeur d'escargot": "Chromobotia macracanthus",
+  
   "rasbora arlequin": "Trigonostigma heteromorpha",
   "harlequin rasbora": "Trigonostigma heteromorpha",
 
   "néon cardinalis": "Paracheirodon axelrodi",
   "cardinal tetra": "Paracheirodon axelrodi",
+  "cardinalis": "Paracheirodon axelrodi",
 
   "néon bleu": "Paracheirodon innesi",
   "neon tetra": "Paracheirodon innesi",
@@ -13,6 +19,7 @@
   "poisson rouge": "Carassius auratus",
 
   "guppy": "Poecilia reticulata",
+  "poisson milion": "Poecilia reticulata",
 
   "platy": "Xiphophorus maculatus",
 
@@ -40,6 +47,8 @@
   "corydoras cuivre": "Corydoras aeneus",
   "corydoras": "Corydoras aeneus",
   "corydoras panda": "Corydoras panda",
+  "corydoras poivre": "Corydoras paleatus",
+  "corydoras poivré": "Corydoras paleatus",
 
   "ancistrus": "Ancistrus cirrhosus",
   "pleco bristle nose": "Ancistrus cirrhosus",
@@ -111,3 +120,4 @@
   "poisson elephant": "Gnathonemus petersii",
   "poisson éléphant": "Gnathonemus petersii"
 }
+
