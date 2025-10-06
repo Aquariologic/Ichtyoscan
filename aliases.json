@@ -267,7 +267,7 @@
 "arlequin": "Rasbora heteromorpha",
 "scatophage": "Scatophagus argus",
 "pirhana noir": "Serrasalmus rhombeus",
-"Discus": "Symphysodon aequifasciatus",
+"discus": "Symphysodon aequifasciatus",
 "gorge de feu": "Thorichthys meeki",
 "poisson archer": "Toxotes blythii",
 "poisson archer": "Toxotes chatareus",
@@ -583,5 +583,6 @@
 "panchax doré": "Aplocheilus panchax",
 "Killi lyre": "Aphyosemion australe"
 }
+
 
 
